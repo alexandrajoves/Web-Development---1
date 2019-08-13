@@ -1,0 +1,98 @@
+
+*{
+    margin: 0px;
+}
+
+header{
+    display: block;
+}
+
+/* Desktop View */
+.header-container{  
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: #a61919;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    float:left;
+}
+
+.header-text{
+    color: white;
+    float: left;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.logo{
+    margin-left: 10px;
+    padding-bottom: 5px;
+    float: left;
+    height: 90px;
+    width: 90px;
+}
+
+.title{
+    padding-top: 10%;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.content-lyric{
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+br{
+    line-height: 150%;
+}
+
+.myMarquee{
+    margin-top: 10px;
+    border: solid black;
+    width: 500px;
+    height: 170px;
+}
+
+/*mobile view*/
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        float: left;
+        font-size: 13px;
+        padding-top: 10px;
+        margin-top: 0%;
+        padding-left: 5px;
+    }
+
+    .logo{
+        float: left;
+        height: 30px;
+        width: 30px;
+        padding-top: 2px;
+        margin-top: 0%;
+        padding-left: 5px;
+    }
+
+    .title{
+        padding-top: 20%;
+        font-size: 15px;
+    }
+
+    .song-writer{
+        font-size: 7px;
+        padding-top: 0px;
+    }
+
+    .content-lyric{
+        font-size: 10px; 
+        padding-top: 5px;
+    }
+
+    #myMarquee{
+        width: 200px;
+        height: 50px;
+    }
+}

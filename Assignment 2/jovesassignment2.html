@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<title>
+	PUP HYMN
+	</title>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <header>
+        <div class="header-container">
+           <img src="finalheader.jpg" alt="PUP Logo" width="100%" height"100" >
+        </div>
+    </header>
+    <body>
+        <div class="body-container">
+		<style>
+			.bordered {
+			center
+			width: 100%;
+			height: 500px;
+			padding: 20px;
+			border: 1px solid black;
+			}
+				
+		</style>
+		<div class="bordered">
+            <center>
+                <h2 class="title">  <font face="sitka heading">
+                    PUP HYMN
+                </h2>
+                <h5 class="song-writer">  <font face="sitka text">
+                    S. Calabig, S. Roldan, and R. Amaranto                    
+                </h5>
+                <marquee class="myMarquee" id="myMarquee" direction="up" loop="1" behavior="scroll" scrollAmount='0' scrollDelay="70">
+                    <p class="content-lyric" id="lyrics">
+					 <font face="sitka text">
+                          <center> <br>Sintang Paaralan <br>
+                          <br>Tanglaw ka ng bayan </br>
+                          <br>Pandayan ng isip ng kabataan </br>
+                          <br>Kami ay dumating nang salat sa yaman </br>
+                          <br>Hanap na dunong ay iyong alay </br> </br> </br>
+                          <br>Ang layunin mong makatao </br>
+                          <br>Dinarangal ang Pilipino </br>
+                          <br>Ang iyong aral, diwa, adhikang taglay </br>
+                          <br>PUP, aming gabay </br>
+                          <br>Paaralang dakila </br>
+                          <br>PUP, pinagpala </br> </br> </br>
+                          <br>Gagamitin ang karunungan </br>
+                          <br>Mula sa iyo, para sa bayan </br>
+                          <br>Ang iyong aral, diwa, adhikang taglay </br>
+                          <br>PUP, aming gabay </br>
+                          <br>Paaralang dakila </br>
+                          <br>PUP, pinagpala </br>
+						  </center> </br>
+                    </p>
+                </marquee>          
+            </center>
+            <center>
+            <audio id="myAudioID">
+                <source src="audio/pup_hymn.mp3" type="audio/mpeg">
+            </audio>
+            <button id="start" onclick="startMarquee()">Play</button>
+            <button id="stop" onclick="stopMarquee()">Pause</button>
+            </center>
+        </div>
+        <script src="myScript.js"></script>
+    </body>
+</html>
