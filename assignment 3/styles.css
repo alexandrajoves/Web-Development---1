@@ -1,0 +1,77 @@
+body{
+	
+    min-width: 900px;
+    width: auto !important;
+    width: 900px;
+    background-color: white;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+      background-position: center;
+}
+
+*{
+	font-style: Times New Roman;
+}
+
+.textboxHeading {
+    float: left;
+    display: inline-block;
+    text-decoration: underline;
+    color: black;
+}
+	
+.textboxName {
+	float: left;
+    display: inline-block;
+}
+
+.textboxDate {
+    float: right;
+    display: inline-block;
+}
+
+.textboxOrderNo {
+    float: right;
+    display: inline-block;
+}
+
+.address {
+    float: left;
+    display: inline-block;
+    margin-left: 52px;
+}
+
+.contactname {
+    float: left;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.phone {
+    float: left;
+    display: inline-block;
+    margin-left: 66px;
+}
+.email {
+    float: left;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+}
+
+.orderform {
+    margin: auto;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+     font-family: 'roboto', sans-serif;
+}
+
+tr{
+	background-color: gray;
+}

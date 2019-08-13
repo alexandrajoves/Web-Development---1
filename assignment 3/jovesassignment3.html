@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer & Order Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<script type="text/javascript" src="order form.js"></script>
+
+<body onload ="getDate()">
+
+<form action="order form.html">
+<fieldset style="width: 680px; margin: auto; border-color: black; background-color: rgba(255, 255, 255, 0.2);">
+    <div class="orderform"><b>Order Form</b><br></div>
+  <fieldset style="width: 650px; margin: auto; border-color: black; ">
+    <legend style="font-size: 18px;">Personal Information:</legend>
+    <div class="textboxHeading">
+        <b>Customer</b> 
+    </div>
+    <div class="textboxDate">
+        Order Date:
+        <input type="date" name="frmDateReg" id="frmDate" size="10"  readonly="true" required style="background-color: rgba(255, 255, 255, 0.3);">
+        <p id="frmDate"></p>
+    </div>
+    <br><br>
+    <div class="textboxName">
+        Customer Name:
+        <input type="text" name="name" size="30" maxlength="60" required style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+    <div class="textboxOrderNo">
+        Order Number:
+        <input type="number" name="number" size="10" maxlength="3" required style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+    <br><br>
+    <div class="address">
+        Address:
+        <input type="text" name="address" size="50" maxlength="90" required style="background-color: rgba(255, 255, 255 	, 0.3);">
+    </div>
+    <br><br>
+    <div class="contactname">
+        Contact Name:
+        <input type="text" name="contactName" size="30" maxlength="60" required style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+    <br><br>
+    <div class="phone">
+        Mobile:
+        <input name="phone" id="phonenum" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required maxlength="13" style="background-color: rgba(255, 255, 255, 0.3);">
+        Phone:
+        <input name="phone" id="phonenum" type="tel" pattern="[0-9]{3}-[0-9]{4}" required maxlength="8" style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+    <br><br>
+    <div class="email">
+        Email Address:
+        <input type="email" name="email" size="25" maxlength="60"  required style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+    <br>
+  </fieldset>
+  <br>
+  <div class="textboxHeading" style="text-indent: 15px; margin-bottom: 5px;">
+        <b>Products to Order</b> 
+  </div>
+  <br>
+    <table style="width: 600px;">
+    <tr style="text-align: center;">
+        <td>Unit</td>
+        <td>Quantity</td>        
+        <td>Product Code</td>     
+        <td>Description</td>
+        <td>Unit Price</td>
+        <td>Total Price</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name1" onchange="myFunction1()" size="13"></td>
+        <td style="text-align: center;"><input type="number" id="no_of_units1" value="0" onchange="myFunction1() "size="6"></td>      
+        <td><input type="text" name="unitcodetextbox1" id="unitcodetextbox1" size="6"></td>
+        <td><input type="text" name="unittextbox1" id="unittextbox1" size="36"></td>      
+        <td><input type="text" name="textbox1" id="textbox1" size="10" value="0" onchange="myFunction1()" ></td>
+        <td><input type="text" name="amount1" id="amount1" readonly="true" value="" size="10"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name2" onchange="myFunction1()" size="13"></td>
+        <td style="text-align: center;"><input type="number" id="no_of_units2" value="0" onchange="myFunction1() "size="6"></td>      
+        <td><input type="text" name="unitcodetextbox2" id="unitcodetextbox2" size="6"></td>
+        <td><input type="text" name="unittextbox2" id="unittextbox2" size="36"></td>      
+        <td><input type="text" name="textbox2" id="textbox2" size="10" value="0" onchange="myFunction1()" ></td>
+        <td><input type="text" name="amount2" id="amount2" readonly="true" value="" size="10"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name3" onchange="myFunction1()" size="13"></td>
+        <td style="text-align: center;"><input type="number" id="no_of_units3" value="0" onchange="myFunction1() "size="6"></td>      
+        <td><input type="text" name="unitcodetextbox3" id="unitcodetextbox3" size="6"></td>
+        <td><input type="text" name="unittextbox3" id="unittextbox3" size="36"></td>      
+        <td><input type="text" name="textbox3" id="textbox3" size="10" value="0" onchange="myFunction1()" ></td>
+        <td><input type="text" name="amount3" id="amount3" readonly="true" value="" size="10"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name4" onchange="myFunction1()" size="13"></td>
+        <td style="text-align: center;"><input type="number" id="no_of_units4" value="0" onchange="myFunction1() "size="6"></td>      
+        <td><input type="text" name="unitcodetextbox4" id="unitcodetextbox3" size="6"></td>
+        <td><input type="text" name="unittextbox4" id="unittextbox4" size="36"></td>      
+        <td><input type="text" name="textbox4" id="textbox4" size="10" value="0" onchange="myFunction1()" ></td>
+        <td><input type="text" name="amount4" id="amount4" readonly="true" value="" size="10"></td>
+    </tr>
+    <tr>
+        <td><input type="text" id="Name5" onchange="myFunction1()" size="13"></td>
+        <td style="text-align: center;"><input type="number" id="no_of_units5" value="0" onchange="myFunction1() "size="6"></td>      
+        <td><input type="text" name="unitcodetextbox5" id="unitcodetextbox3" size="6"></td>
+        <td><input type="text" name="unittextbox5" id="unittextbox5" size="36"></td>      
+        <td><input type="text" name="textbox5" id="textbox5" size="10" value="0" onchange="myFunction1()" ></td>
+        <td><input type="text" name="amount5" id="amount5" readonly="true" value="" size="10"></td>
+    </tr>
+  </table>
+  <br>
+    <div style="float: right; display: inline-block;">
+    Total: <input type="text" name="amount6" id="amount6" readonly="true" value="" size="10" style="background-color: rgba(255, 255, 255, 0.3);">
+    </div>
+  <br>
+  <input type="submit" value="Submit" style="margin: auto;">
+  <button value="Reset" onclick="window.location.reload()" style="margin: auto;">Reset</button>
+</fieldset>
+</form>
+
+
+</body>
+
+</html>
